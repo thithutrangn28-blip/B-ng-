@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Archivo&family=Arimo&family=Arvo&family=Asap&family=Assistant&family=Barlow&family=Bitter&family=Bree+Serif&family=Cabin&family=Cairo&family=Catamaran&family=Cinzel&family=Copse&family=Courier+Prime&family=Crimson+Text&family=Cutive+Mono&family=DM+Sans&family=Dosis&family=EB+Garamond&family=Exo+2&family=Fira+Sans&family=Heebo&family=Hind&family=IBM+Plex+Sans&family=Inconsolata&family=Josefin+Sans&family=Josefin+Slab&family=Kanit&family=Karla&family=Lato&family=Libre+Baskerville&family=Libre+Franklin&family=Lora&family=Maven+Pro&family=Merriweather&family=Merriweather+Sans&family=Montserrat&family=Mukta&family=Muli&family=Noto+Sans&family=Noto+Serif&family=Nunito&family=Open+Sans&family=Oswald&family=Oxygen&family=PT+Sans&family=PT+Serif&family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&family=Prompt&family=Questrial&family=Quicksand&family=Raleway&family=Rajdhani&family=Roboto&family=Roboto+Mono&family=Roboto+Slab&family=Rokkitt&family=Rubik&family=Share+Tech+Mono&family=Signika&family=Slabo+27px&family=Source+Code+Pro&family=Source+Sans+Pro&family=Space+Mono&family=Teko&family=Titillium+Web&family=Ubuntu&family=Varela+Round&family=Work+Sans&family=Zilla+Slab&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-stone-800 bg-stone-100;
+  }
+}
+
+/* Custom Scrollbar for aesthetic feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
+}
